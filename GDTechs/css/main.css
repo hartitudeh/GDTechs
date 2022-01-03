@@ -1,0 +1,230 @@
+:root {
+  --primary-color: #ddd;
+  --secondary-color: #173459;
+  --tertiary-color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: url(../img/background/bg.jpg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  /* padding: 15px; */
+}
+
+.navbar {
+  padding: 20px 0px !important;
+  position: sticky !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 5px;
+  z-index: 9999;
+  /* background: #ddd; */
+}
+
+nav a {
+  text-decoration: none !important;
+  color: var(--tertiary-color) !important;
+  text-transform: uppercase;
+  letter-spacing: 3;
+  padding: 0px 10px;
+}
+
+/* nav > ul {
+  display: flex;
+  padding-right: 130px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} 
+
+/* nav > ul > li > a {
+  padding: 25px !important;
+  text-transform: uppercase;
+} */
+
+/* nav > ul > li > a:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+} */
+/* 
+nav .active {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+} */
+
+/* nav > ul > li {
+  text-align: center;
+  letter-spacing: 5px;
+  border-right: 1px solid var(--secondary-color);
+}
+
+nav > ul > li:first-child {
+  border-left: 1px solid var(--secondary-color);
+} */
+
+/* nav > ul > li:hover {
+  border-bottom: 2px solid crimson;
+} */
+
+.profile--section {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.max--width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+section .title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+section .title::before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #4d015c;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  content: "Who we are";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right .text span {
+  color: crimson;
+}
+
+section.services {
+  padding: 40px;
+}
+section.services h2 {
+  color: var(--primary-color);
+}
+
+section .our--services::after {
+  content: "What we render";
+  background: #4d015c;
+}
+
+section .our--services::before{
+  background: var(--primary-color);
+}
+
+section.services a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul.ml-auto {
+  margin-left: auto;
+  padding-right: 20px;
+  color: #ddd !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0px 10px;
+  letter-spacing: 3px;
+}
+
+/* .btn-warning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  margin-top: 10px;
+} */
+
+@media screen and (max-width: 400px) {
+  .max--width {
+    max-width: 1159px;
+    padding: 0 0px;
+    margin: auto;
+  }
+}
